@@ -14,7 +14,7 @@
         }
 
         body {
-            background-image : url(assets/gest-removebg-preview.png);
+            background-image: url(assets/img/gest-removebg-preview.png);
             background-repeat: no-repeat;
             background-position: top;
         }
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <ul id="menu">
+    <ul id="menu" onmouseover="style.color='red'" onmouseout="blur">
         <li> <a href="index.html">Sobre parto humanizado</a>
         </li>
         <li><a href="sobre-mim.html">Um pouco sobre meu relato</a>
@@ -33,18 +33,33 @@
 
     <h1> E como voce se sente?</h1>
     <form>
-        <label for="Nome"><b> Diga seu nome </b></label><br>
+        <label for="nome"><b> Diga seu nome </b></label><br>
         <input type="text" id="nome">
         <br>
         <br>
-        <label for="Mensagem"><b>Compartilhe sobre voce!</b></label><br>
+        <label for="sobre"><b>Compartilhe sobre voce!</b></label><br>
         <textarea name="sobre" id="sobre" cols="60" rows="10"></textarea>
         <br>
         <br>
-        <button>Enviar</button>
+        <button id="myBtn">Enviar</button>
 
+        <script>
+        document.getElementById("myBtn").addEventListener("click", myFunction);
+        
+        function myFunction() {
+          alert ("Relato encaminado,obrigado por compartilhar!!");
+        }
+        </script>
     </form>
+    <script src="assets/js/script.js"></script>
+    <footer>
+        <div class="container">
 
+        </div>
+    </footer>
+    <p class="center">
+        Todos os dereitos reservados &copy;
+    </p>
 </body>
 
 </html>
