@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suas emoções</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background-color: #deb887;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(assets/img/gest-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+    </style>
 </head>
+
 <body>
- <ul>
-    <li> <a href="index.html">Sobre mim</a>
-   </li>
-    <li>
-         <a href="compartilhamento.html">Compartilhe sobre voce</a>
-   </li>
-</ul>
+    <ul id="menu" onmouseover="style.color='red'" onmouseout="blur">
+        <li> <a href="index.html">Sobre parto humanizado</a>
+        </li>
+        <li><a href="sobre-mim.html">Um pouco sobre meu relato</a>
+        </li>
+        <li><a href="compartilhamento.html">Compartilhe sobre voce</a>
+        </li>
+        <li><a href="tst.html">teste</a>
+        </li>
+        <img src="assets/img/feto.png" alt="ciclo feto" style="width: 200px ;margin-left: 95pt;">
+
+    </ul>
+
     <h1> E como voce se sente?</h1>
     <form>
-<label for="Nome"><b> Diga seu nome </b></label><br>
-<input type="text" id="nome">
-<br>
-<br>
-<label for="Mensagem"><b>Compartilhe sobre voce!</b></label><br>
-<textarea name="sobre" id="sobre" cols="60" rows="10"></textarea>
-<br>
-<br>
-<button>Enviar</button>
+        <label for="nome"><b> Diga seu nome </b></label><br>
+        <input type="text" id="nome">
+        <br>
+        <br>
+        <label for="sobre"><b>Compartilhe sobre voce!</b></label><br>
+        <textarea name="sobre" id="sobre" cols="60" rows="10"></textarea>
+        <br>
+        <br>
+        <button id="myBtn">Enviar</button>
 
+        <script>
+            document.getElementById("myBtn").addEventListener("click", myFunction);
+
+            function myFunction() {
+                alert("Relato encaminado,obrigado por compartilhar!!");
+            }
+        </script>
     </form>
-     
+    <script src="assets/js/script.js"></script>
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+    <p class="center">
+        Todos os dereitos reservados &copy;
+    </p>
 </body>
+
 </html>
